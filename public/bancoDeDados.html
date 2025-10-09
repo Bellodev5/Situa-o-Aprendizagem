@@ -55,7 +55,7 @@
     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
       Descubra os fundamentos da programação de forma prática e intuitiva.<br>
       Aprenda com exemplos interativos e desenvolva seu raciocínio lógico para resolver problemas reais.
-    </p>
+    </p><br>
       <a href="/public/index.html" 
          class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-100 transition">
         Voltar ao Início
@@ -85,7 +85,136 @@
       </div>
     </div>
     
+    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-6">
+      <div class="flex items-center gap-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">
+            3. Dicionário de Dados e tipos de dados em um Banco de Dados
+          </h2>
+          <p class="text-gray-700">
+            O dicionário de dados é um documento que descreve detalhadamente todas as tabelas, campos e
+            tipos de dados de um banco de dados. Ele funciona como um manual técnico, facilitando o
+            entendimento da estrutura e das relações entre as informações armazenadas.
+          </p>
+        </div>
+      </div>
     
+      <div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Exemplo de Dicionário de Dados</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full border border-gray-200 rounded-lg text-sm">
+            <thead class="bg-gray-100">
+              <tr class="text-left">
+                <th class="p-2 border">Tabela</th>
+                <th class="p-2 border">Campo</th>
+                <th class="p-2 border">Tipo de Dado</th>
+                <th class="p-2 border">Tamanho</th>
+                <th class="p-2 border">Descrição</th>
+                <th class="p-2 border">Restrições</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border">Aluno</td>
+                <td class="p-2 border">id_aluno</td>
+                <td class="p-2 border">INTEGER</td>
+                <td class="p-2 border">-</td>
+                <td class="p-2 border">Identificador único do aluno</td>
+                <td class="p-2 border">PK (chave primária)</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-2 border">Aluno</td>
+                <td class="p-2 border">nome</td>
+                <td class="p-2 border">VARCHAR</td>
+                <td class="p-2 border">100</td>
+                <td class="p-2 border">Nome completo do aluno</td>
+                <td class="p-2 border">NOT NULL</td>
+              </tr>
+              <tr>
+                <td class="p-2 border">Aluno</td>
+                <td class="p-2 border">idade</td>
+                <td class="p-2 border">INTEGER</td>
+                <td class="p-2 border">-</td>
+                <td class="p-2 border">Idade do aluno</td>
+                <td class="p-2 border">CHECK (idade &gt;= 0)</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-2 border">Aluno</td>
+                <td class="p-2 border">nota_avaliacao</td>
+                <td class="p-2 border">NUMERIC</td>
+                <td class="p-2 border">4,2</td>
+                <td class="p-2 border">Nota média do aluno</td>
+                <td class="p-2 border">-</td>
+              </tr>
+              <tr>
+                <td class="p-2 border">Aluno</td>
+                <td class="p-2 border">id_matricula</td>
+                <td class="p-2 border">INTEGER</td>
+                <td class="p-2 border">-</td>
+                <td class="p-2 border">Identificador da matrícula</td>
+                <td class="p-2 border">FK (referência à tabela Matricula)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Tipos de Dados Comuns em Bancos de Dados</h3>
+    
+        <div class="overflow-x-auto">
+          <table class="w-full border border-gray-200 rounded-lg text-sm mb-6">
+            <thead class="bg-gray-100">
+              <tr class="text-left">
+                <th class="p-2 border">Categoria</th>
+                <th class="p-2 border">Tipo</th>
+                <th class="p-2 border">Descrição</th>
+                <th class="p-2 border">Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border">Numéricos</td>
+                <td class="p-2 border">INTEGER, BIGINT, NUMERIC, FLOAT</td>
+                <td class="p-2 border">Armazenam números inteiros ou decimais</td>
+                <td class="p-2 border">25, 123456789, 12.50</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-2 border">Texto</td>
+                <td class="p-2 border">CHAR, VARCHAR, TEXT</td>
+                <td class="p-2 border">Armazenam caracteres ou textos longos</td>
+                <td class="p-2 border">'Maria', 'Observações...'</td>
+              </tr>
+              <tr>
+                <td class="p-2 border">Data/Hora</td>
+                <td class="p-2 border">DATE, TIME, TIMESTAMP</td>
+                <td class="p-2 border">Datas e horários</td>
+                <td class="p-2 border">2025-10-09, 13:45:00</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-2 border">Lógicos</td>
+                <td class="p-2 border">BOOLEAN</td>
+                <td class="p-2 border">Valores verdadeiros ou falsos</td>
+                <td class="p-2 border">TRUE, FALSE</td>
+              </tr>
+              <tr>
+                <td class="p-2 border">Outros</td>
+                <td class="p-2 border">SERIAL, UUID, JSON, BYTEA</td>
+                <td class="p-2 border">Tipos especiais para IDs, objetos e arquivos</td>
+                <td class="p-2 border">UUID, {"nome": "Carlos"}, imagem binária</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <p class="text-gray-700">
+          Esses tipos de dados definem o formato e o comportamento das informações armazenadas em um banco de dados. 
+          A escolha correta de cada tipo garante melhor desempenho, integridade e organização dos dados.
+        </p>
+      </div>
+    </div>
+    
+
   </div>
 
 

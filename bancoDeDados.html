@@ -246,10 +246,20 @@
     <strong>Matrícula</strong>. Abaixo um exemplo ilustrativo:
   </p>
 
-  <img src="img/exemploDER.png" alt="Exemplo de DER" class="rounded-lg shadow-md mx-auto w-full md:w-1/2">
+  <img src="img/DER.jpg" alt="Exemplo de DER" class="rounded-lg shadow-md mx-auto w-full md:w-1/2">
 
   <p>
-    No exemplo acima:
+    No exemplo acima: Exemplo de diagrama para um sistema de gerenciamento de biblioteca:
+
+Entidades Principais
+Livro: ISBN, Título, Autor, Ano
+Autor: ID, Nome, Nacionalidade
+Usuário: ID, Nome, Email, Telefone
+Empréstimo: ID, Data_Empréstimo, Data_Devolução
+Relacionamentos
+Autor escreve Livro (1:N)
+Usuário realiza Empréstimo (1:N)
+Livro está em Empréstimo (1:1)
   </p>
 
   <ul class="list-disc pl-6 text-gray-700">
@@ -269,10 +279,10 @@
     como se relacionam. Veja um exemplo ilustrativo:
   </p>
 
-  <img src="img/exemploMER.png" alt="Exemplo MER" class="rounded-lg shadow-md mx-auto w-full md:w-1/2">
+  <img src="img/mer.png" alt="Exemplo MER" class="rounded-lg shadow-md mx-auto w-full md:w-1/2">
 
   <p>
-    No exemplo:</p>
+    No exemplo: Modelo entidade-relacionamento para um sistema de e-commerce</p>
 
   <ul class="list-disc pl-6 text-gray-700">
     <li>Entidade <strong>Cliente</strong></li>

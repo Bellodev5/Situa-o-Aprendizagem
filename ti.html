@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="shortcut icon" href="img/belloFAVicon.png" type="image/png">
+  <title>BELLO`S SOFTWARES</title>
+</head>
+<body class="flex flex-col min-h-screen pt-[70px] font-[Segoe UI,Arial,sans-serif]">
+
+  <nav class="bg-[#222] fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4">
+    <img src="img/bellosLOGO.png" alt="Logo da Bello`s Softwares" class="h-[55px]">
+
+    <ul class="flex gap-4 list-none">
+      <li><a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">HOME</a></li>
+      <li><a href="contato.html" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">CONTATO</a></li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">SERVIÇOS</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="programacao.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica de Programação</a></li>
+          <li><a href="ti.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Tecnologia da Informação</a></li>
+          <li><a href="bancoDeDados.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Banco de Dados</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">IMPLEMENTAÇÃO</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          
+          <li><a href="logicaComputacional.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica Computacional</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">INFRAESTRUTURA</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="eletronica.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Eletrônica</a></li>
+          <li><a href="rede.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Rede</a></li>
+    
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="bg-white py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+
+    <div class="relative max-w-5xl mx-auto text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+        Fundamentos da Tecnologia da Informação
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        Infraestrutura de TI (hardware, software, redes, gerenciamento de dados e serviços), a segurança da informação (confidencialidade, integridade e disponibilidade) e o processamento de dados para gerar informação e conhecimento estratégico para a tomada de decisões. 
+      </p> <br>
+      <a href="index.html" class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-100 transition">
+        Voltar ao Início
+      </a>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto py-10 px-4 grid gap-6">
+
+    <div class="bg-white rounded-2xl shadow-md p-6 flex items-center gap-4">
+      <i class="fa-solid fa-microchip w-16 h-16 object-contain" alt = "Hardware"></i>
+      <div>
+        <h2 class="text-2xl font-bold mb-2">1. O que é Hardware? Placa-mãe, CPU e RAM</h2>
+        <p class="mb-2"><strong>Hardware</strong> é toda a parte física do computador: peças e componentes palpáveis (placa-mãe, processador, memória, discos, fontes, periféricos).</p>
+
+        <p class="mb-1"><strong>Placa-mãe (Motherboard):</strong> placa principal que conecta todos os componentes, fornece soquetes (CPU, RAM), barramentos (PCIe), controladores e interfaces (USB, SATA).</p>
+
+        <p class="mb-1"><strong>Processador (CPU):</strong> unidade central de processamento — executa instruções, realiza cálculos e coordena tarefas do sistema. Características importantes: número de núcleos, frequência (GHz), cache.</p>
+
+        <p class="mb-1"><strong>Memória principal (RAM):</strong> memória volátil usada para armazenar temporariamente dados e instruções de programas em execução. A velocidade e a quantidade de RAM influenciam no desempenho multitarefa.</p>
+
+        <p class="text-sm text-gray-500 mt-2">Observação: ao desligar o computador, o conteúdo da RAM é perdido (não persistente).</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6 flex items-center gap-4">
+      <img src="img/os.png" alt="Sistema Operacional" class="w-16 h-16 object-contain">
+      <div>
+        <h2 class="text-2xl font-bold mb-2">2. O que é um Sistema Operacional?</h2>
+        <p class="mb-2"><strong>Sistema Operacional (SO)</strong> é o software base que gerencia hardware, recursos, processos, memória e fornece interface para o usuário e para aplicações.</p>
+
+        <p class="mb-1"><strong>Funções principais:</strong> gerenciamento de processos, gerenciamento de memória, sistema de arquivos, controle de dispositivos, segurança e interface (gráfica ou texto).</p>
+
+        <p class="mb-2"><strong>Exemplos:</strong></p>
+        <ul class="list-disc pl-10 text-sm">
+          <li>Windows (ex.: Windows 10/11)</li>
+          <li>Linux (ex.: Ubuntu, Debian)</li>
+          <li>macOS (Apple)</li>
+          <li>Android (em dispositivos móveis)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6">
+      <h2 class="text-2xl font-bold mb-4">3. O que é o Sistema de Arquivos? Modo texto (cmd/terminal) e modo gráfico (explorer)</h2>
+
+      <p class="mb-2"><strong>Sistema de Arquivos</strong> é a estrutura usada pelo SO para organizar, nomear e armazenar arquivos em um dispositivo de armazenamento (HD/SSD/pen-drive).</p>
+
+      <p class="mb-2"><strong>Exemplos de FS:</strong> NTFS, FAT32, exFAT (Windows), ext4 (Linux), APFS (macOS).</p>
+
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Modo Texto (CMD / Terminal)</h3>
+          <p class="text-sm mb-2">Operações comuns feitas por comando — rápido, ideal para administração e scripts.</p>
+          <pre class="text-sm bg-white p-3 rounded border overflow-x-auto"><code>
+# Windows (cmd)
+dir
+cd pasta
+mkdir nova_pasta
+del arquivo.txt
+
+# Linux / macOS (terminal)
+ls -la
+cd /caminho/da/pasta
+mkdir nova_pasta
+rm arquivo.txt
+          </code></pre>
+          <p class="text-xs text-gray-500 mt-2">Dica: no terminal você pode automatizar tarefas com scripts (batch, bash).</p>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Modo Gráfico (Explorer / Finder)</h3>
+          <p class="text-sm mb-2">Interface visual com pastas, miniaturas, arrastar/soltar — mais amigável para usuários finais.</p>
+          <ul class="list-disc pl-5 text-sm">
+            <li>Explorar pastas com ícones e visualizações (detalhes, miniaturas).</li>
+            <li>Copiar/colar arquivos com atalhos (Ctrl+C / Ctrl+V).</li>
+            <li>Operações com menu de contexto (botão direito).</li>
+          </ul>
+          <p class="text-xs text-gray-500 mt-2">Use o modo gráfico para tarefas visuais e o modo texto para tarefas repetitivas ou automação.</p>
+        </div>
+      </div>
+
+    </div>
+
+ <div class="bg-white rounded-2xl shadow-md p-6">
+  <h2 class="text-2xl font-bold mb-4">4. O que é Software de Escritório? Exemplos e aplicações</h2>
+
+  <p class="mb-2">
+    Softwares de escritório (office) são ferramentas para criar documentos, planilhas, apresentações e outros conteúdos de produtividade.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-4 mb-10">
+
+    <div class="bg-gray-50 p-4 rounded-lg text-center">
+      <img src="img/word.png" alt="Word" class="mx-auto mb-3 w-20 h-20 object-contain">
+      <h3 class="font-semibold mb-2">Editor de Texto</h3>
+      <p class="text-sm mb-2"><strong>Ex:</strong> Microsoft Word, LibreOffice Writer</p>
+      <p class="text-sm">Aplicações: redação de relatórios, cartas, TCCs, formatação e revisão de texto.</p>
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded-lg text-center">
+      <img src="img/excel.png" alt="Excel" class="mx-auto mb-3 w-20 h-20 object-contain">
+      <h3 class="font-semibold mb-2">Planilha Eletrônica</h3>
+      <p class="text-sm mb-2"><strong>Ex:</strong> Microsoft Excel, LibreOffice Calc</p>
+      <p class="text-sm">Aplicações: cálculos, gráficos, controle financeiro, análise de dados e tabelas.</p>
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded-lg text-center">
+      <img src="img/powerpoint.png" alt="PowerPoint" class="mx-auto mb-3 w-20 h-20 object-contain">
+      <h3 class="font-semibold mb-2">Apresentações</h3>
+      <p class="text-sm mb-2"><strong>Ex:</strong> Microsoft PowerPoint, LibreOffice Impress</p>
+      <p class="text-sm">Aplicações: aulas, apresentações corporativas, pitches, slides para reuniões.</p>
+    </div>
+
+  </div>
+
+  <div class="w-full bg-gray-200 h-80 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+    <img src="img/w.jpg" class="w-full h-full object-cover" alt="Software de Escritório 1">
+  </div>
+
+  <p class="mb-8">
+    Os editores de texto permitem criar documentos estruturados, como relatórios, contratos, trabalhos escolares e textos profissionais.
+  </p>
+
+  <div class="w-full bg-gray-200 h-80 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+    <img src="img/controleDeFluxo.jpg" class="w-full h-full object-cover" alt="Software de Escritório 2">
+  </div>
+
+  <p class="mb-8">
+    As planilhas eletrônicas são usadas para cálculos, fórmulas, análises de dados, orçamentos e gráficos.
+  </p>
+
+  <div class="w-full bg-gray-200 h-80 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+    <img src="img/office3.jpg" class="w-full h-full object-cover" alt="Software de Escritório 3">
+  </div>
+
+  <p class="mb-2">
+    Programas de apresentação são usados para criar slides profissionais, palestras, aulas e apresentações corporativas.
+  </p>
+
+</div>
+
+  </div>
+
+  <footer class="bg-[#222] text-white mt-auto">
+    <div class="py-10 px-5 flex justify-center">
+      <div class="text-center max-w-md">
+        <img src="img/bellosLOGO.png" alt="Logo Bello's Softwares" class="h-12 mx-auto mb-5">
+        <p class="mb-5 leading-relaxed text-gray-300">
+          Soluções inteligentes em automação de atendimento para impulsionar suas vendas e melhorar a experiência do cliente.
+        </p>
+      </div>
+    </div>
+    <div class="bg-[#1a1a1a] text-gray-500 text-sm text-center py-4 px-6">
+      © 2025 BELLO`S SOFTWARES. Todos os direitos reservados. CNPJ:12.345.678/9101-12
+    </div>
+  </footer>
+
+</body>
+</html>

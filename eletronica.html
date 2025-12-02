@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="img/belloFAVicon.png" type="image/png">
+  <script defer>
+    
+    function calcOhm() {
+      const V = Number(document.getElementById("ohmV").value);
+      const I = Number(document.getElementById("ohmI").value);
+      const R = Number(document.getElementById("ohmR").value);
+      let res = "";
+
+      if (V && I) res = `R = V / I = ${(V / I).toFixed(2)} Ω`;
+      else if (V && R) res = `I = V / R = ${(V / R).toFixed(2)} A`;
+      else if (I && R) res = `V = I * R = ${(I * R).toFixed(2)} V`;
+      else res = "Forneça pelo menos 2 valores.";
+
+      document.getElementById("ohmRes").innerText = res;
+    }
+
+    function calcPotencia() {
+      const V = Number(document.getElementById("potV").value);
+      const I = Number(document.getElementById("potI").value);
+      const R = Number(document.getElementById("potR").value);
+      let res = "";
+
+      if (V && I) res = `P = V * I = ${(V * I).toFixed(2)} W`;
+      else if (I && R) res = `P = I² * R = ${(I * I * R).toFixed(2)} W`;
+      else if (V && R) res = `P = V² / R = ${(V * V / R).toFixed(2)} W`;
+      else res = "Forneça ao menos dois valores.";
+
+      document.getElementById("potRes").innerText = res;
+    }
+
+  </script>
+  <title>BELLO`S SOFTWARES</title>
+</head>
+
+<body class="flex flex-col min-h-screen pt-[70px] font-[Segoe UI,Arial,sans-serif]">
+
+<nav class="bg-[#222] fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4">
+    <img src="img/bellosLOGO.png" alt="Logo da Bello`s Softwares" class="h-[55px]">
+
+    <ul class="flex gap-4 list-none">
+      <li><a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">HOME</a></li>
+      <li><a href="contato.html" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">CONTATO</a></li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">SERVIÇOS</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="programacao.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica de Programação</a></li>
+          <li><a href="ti.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Tecnologia da Informação</a></li>
+          <li><a href="bancoDeDados.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Banco de Dados</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">IMPLEMENTAÇÃO</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          
+          <li><a href="logicaComputacional.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica Computacional</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">INFRAESTRUTURA</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="eletronica.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Eletrônica</a></li>
+          <li><a href="rede.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Rede</a></li>
+    
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<section class="bg-white py-20 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+
+  <div class="relative max-w-5xl mx-auto text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+      Fundamentos de Eletroeletrônica
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+      Conceitos essenciais de componentes, sensores, Arduino, programação e automação eletrônica aplicada.
+    </p> <br>
+      <a href="index.html" 
+         class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-100 transition">
+        Voltar ao Início
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto py-10 px-4 grid gap-6">
+
+  <!-- ITEM 1 -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2 text-center">1. Componentes Eletrônicos</h2>
+    <p>São dispositivos fundamentais para construção de circuitos.</p>
+    <p class="mt-2"><strong>• Resistor:</strong> limita corrente.</p>
+    <p><strong>• LED:</strong> diodo emissor de luz.</p>
+    <p><strong>• Transistor:</strong> chave/amplificador.</p>
+    <p><strong>• Circuito Integrado (CI):</strong> conjunto de componentes miniaturizados.</p>
+
+    <img src="img/resistor.jpg" class="w-40 h-40 object-contain mx-auto mt-6">
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2 text-center">2. Sensores em Automação</h2>
+    <p><strong>• Temperatura:</strong> mede calor (LM35, DHT22).</p>
+    <p><strong>• Umidade:</strong> mede umidade relativa (DHT22).</p>
+    <p><strong>• Luminosidade:</strong> LDR.</p>
+    <p><strong>• Proximidade:</strong> ultrassônico HC-SR04.</p>
+
+    <img src="img/LDR.png" class="w-40 h-40 object-contain mx-auto mt-6">
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2 text-center">3. Arduino: o que é, aplicações, vantagens</h2>
+    <p><strong>Arduino</strong> é uma plataforma de prototipagem eletrônica baseada em hardware e software livres.</p>
+    <p class="mt-2"><strong>Aplicações:</strong> automação residencial, robótica, sensores, IoT, controle de motores.</p>
+    <p class="mt-2"><strong>Vantagens:</strong> barato, fácil, grande comunidade.</p>
+    <p><strong>Desvantagens:</strong> capacidade limitada comparada a microcontroladores mais avançados.</p>
+
+    <img src="img/ARDUINO.jpg" class="w-40 h-40 object-contain rounded-lg border mx-auto mt-6">
+  </div>
+
+  <!-- ITEM 4 -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2 text-center">4. Como o Arduino funciona? Eletrônica Embarcada</h2>
+    <p><strong>Eletrônica embarcada</strong> envolve sistemas projetados para realizar tarefas específicas.</p>
+    <p class="mt-2">O Arduino utiliza um <strong>microcontrolador</strong> que lê entradas (sensores) e aciona saídas (motores, LEDs).</p>
+
+    <img src="img/micro.jpg" class="w-40 h-40 object-contain mx-auto mt-6">
+  </div>
+
+  <!-- ITEM 5 -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2 text-center">5. Linguagem utilizada no Arduino</h2>
+    <p>A programação é feita em <strong>C/C++</strong>, através da IDE do Arduino.</p>
+    <p>Também é possível usar Python em placas como ESP32 via MicroPython.</p>
+
+    <img src="img/cmais.png" class="w-40 h-40 object-contain mx-auto mt-6">
+  </div>
+
+  <!-- OS DEMAIS ITENS PERMANECEM IGUAIS -->
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2">6. Entradas e Saídas Digitais</h2>
+    <p><strong>Entradas digitais:</strong> recebem sinais 0V (LOW) ou 5V (HIGH).</p>
+    <p><strong>Saídas digitais:</strong> enviam sinais 0V ou 5V para ativar dispositivos.</p>
+    <p>Exemplo: acender um LED, ler um botão.</p>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-2">7. Entradas e Saídas Analógicas</h2>
+    <p><strong>Analógicas:</strong> valores variáveis, não apenas 0 ou 1.</p>
+    <p>Exemplo: leitura de sensores como LDR, potenciômetro, LM35.</p>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">8. Lei de Ohm (V, I, R)</h2>
+
+    <label>Tensão (V):</label>
+    <input id="ohmV" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <label>Corrente (I):</label>
+    <input id="ohmI" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <label>Resistência (R):</label>
+    <input id="ohmR" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <button onclick="calcOhm()" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">Calcular</button>
+
+    <div id="ohmRes" class="mt-3 p-3 bg-gray-50 rounded-lg text-sm">Resultado aparecerá aqui</div>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">9. Cálculo de Potência (P)</h2>
+
+    <label>Tensão (V):</label>
+    <input id="potV" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <label>Corrente (I):</label>
+    <input id="potI" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <label>Resistência (R):</label>
+    <input id="potR" type="number" class="w-full mb-3 p-2 border rounded-lg">
+
+    <button onclick="calcPotencia()" class="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700">Calcular</button>
+
+    <div id="potRes" class="mt-3 p-3 bg-gray-50 rounded-lg text-sm">Resultado aparecerá aqui</div>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">10. Leitura Analógica e Acionamento Digital (Arduino)</h2>
+
+    <pre class="p-3 bg-gray-100 rounded-lg text-sm overflow-x-auto">
+<code>
+// Lê sensor analógico e aciona LED
+int sensor = A0;
+int led = 8;
+int valor = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  valor = analogRead(sensor);
+  Serial.println(valor);
+
+  if (valor > 500) {
+    digitalWrite(led, HIGH);
+  } else {
+    digitalWrite(led, LOW);
+  }
+
+  delay(200);
+}
+</code>
+    </pre>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">11. Diodo, LED e Display 7 Segmentos</h2>
+    <p><strong>Diodo:</strong> componente que permite passagem de corrente em apenas um sentido.</p>
+    <p><strong>LED:</strong> diodo emissor de luz, usado como indicador luminoso.</p>
+    <p><strong>Display 7 segmentos:</strong> formado por 7 LEDs internos que exibem números de 0 a 9.</p>
+  </div>
+
+</div>
+
+<footer class="bg-[#222] text-white mt-auto">
+  <div class="py-10 px-5 flex justify-center">
+    <div class="text-center max-w-md">
+      <img src="img/bellosLOGO.png" class="h-12 mx-auto mb-5">
+      <p class="mb-5 leading-relaxed text-gray-300">
+        Soluções inteligentes em automação de atendimento para impulsionar suas vendas.
+      </p>
+    </div>
+  </div>
+  <div class="bg-[#1a1a1a] text-gray-500 text-sm text-center py-4 px-6">
+    © 2025 BELLO`S SOFTWARES. Todos os direitos reservados. CNPJ:12.345.678/9101-12
+  </div>
+</footer>
+
+</body>
+</html>

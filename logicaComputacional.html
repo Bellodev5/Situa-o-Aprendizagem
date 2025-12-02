@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="img/belloFAVicon.png" type="image/png">
+  <script src="/src/scriptsProg.js" defer></script>
+  <title>BELLO`S SOFTWARES</title>
+</head>
+
+<body class="flex flex-col min-h-screen pt-[70px] font-[Segoe UI,Arial,sans-serif]">
+
+ <nav class="bg-[#222] fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4">
+    <img src="img/bellosLOGO.png" alt="Logo da Bello`s Softwares" class="h-[55px]">
+
+    <ul class="flex gap-4 list-none">
+      <li><a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">HOME</a></li>
+      <li><a href="contato.html" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">CONTATO</a></li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">SERVIÇOS</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="programacao.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica de Programação</a></li>
+          <li><a href="ti.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Tecnologia da Informação</a></li>
+          <li><a href="bancoDeDados.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Banco de Dados</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">IMPLEMENTAÇÃO</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          
+          <li><a href="logicaComputacional.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Lógica Computacional</a></li>
+        </ul>
+      </li>
+
+      <li class="relative group">
+        <a href="" class="text-white px-3 py-2 hover:bg-[#124eb6] rounded">INFRAESTRUTURA</a>
+        <ul class="hidden group-hover:block absolute bg-[#0b61f3] rounded min-w-[160px] py-2">
+          <li><a href="eletronica.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Eletrônica</a></li>
+          <li><a href="rede.html" class="block px-4 py-2 text-sm text-white hover:bg-[#124eb6]">Rede</a></li>
+    
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<!-- HEADER DA PÁGINA (TÍTULO ALTERADO) -->
+<section class="bg-white py-20 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+  
+  <div class="relative max-w-5xl mx-auto text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+      Lógica Computacional
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+      Entenda os fundamentos que estruturam o pensamento lógico na construção de algoritmos e resolução de problemas.
+    </p> <br>
+      <a href="index.html" 
+         class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-100 transition">
+        Voltar ao Início
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<div class="max-w-6xl mx-auto py-10 px-4 grid gap-6">
+
+  <!-- 1. Fluxogramas -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+  <h2 class="text-2xl font-bold mb-2">1. O que são Fluxogramas? Qual sua simbologia?</h2>
+  <p>Fluxogramas são diagramas usados para representar visualmente etapas de um processo ou algoritmo.</p>
+
+  <p class="mt-2 font-semibold">Simbologia básica:</p>
+  <ul class="list-disc ml-6 mb-4">
+    <li>🟦 Início/Fim → Elipse</li>
+    <li>⬜ Processo → Retângulo</li>
+    <li>🔶 Decisão → Losango</li>
+    <li>➡️ Setas → Indicam fluxo</li>
+  </ul>
+
+  <div class="mt-4 w-full bg-gray-200 h-80 rounded-lg overflow-hidden">
+    <img src="img/fluxograma.png" class="w-full h-full object-contain">
+  </div>
+</div>
+
+
+  <!-- 2. Algoritmos -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+  <h2 class="text-2xl font-bold mb-2">2. O que são algoritmos? Onde são usados?</h2>
+  <p>Algoritmos são sequências de passos lógicos e finitos para resolver um problema ou executar uma tarefa.</p>
+  <p class="mt-2">Estão presentes em: sistemas, aplicativos, rotas de GPS, redes sociais, automação e muito mais.</p>
+
+  <div class="mt-4 w-full bg-gray-200 h-80 rounded-lg overflow-hidden">
+    <img src="img/algoritmos.png" class="w-full h-full object-contain">
+  </div>
+</div>
+
+
+  <!-- 3. Portugol + Foto -->
+  <div class="bg-white rounded-2xl shadow-md p-6 flex gap-4">
+    <img src="img/portugolLOGO.png" class="w-20 h-20 object-contain">
+    <div>
+      <h2 class="text-2xl font-bold mb-2">3. O que é o Portugol? O que é o Portugol Studio?</h2>
+      <p><strong>Portugol</strong> é uma pseudolinguagem próxima do português usada para ensinar lógica de programação.</p>
+      <p><strong>Portugol Studio</strong> é um ambiente gratuito que permite criar, executar e visualizar algoritmos.</p>
+      <p class="mt-2 text-gray-600">Espaço para foto abaixo:</p>
+      
+    </div>
+  </div>
+
+  <!-- 4. Variáveis e Constantes -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+  <h2 class="text-2xl font-bold mb-2">4. O que são Variáveis e Constantes?</h2>
+
+  <p><strong>Variáveis:</strong> espaços na memória cujo valor pode mudar.</p>
+  <p><strong>Constantes:</strong> valores fixos que não podem ser alterados durante o programa.</p>
+
+  <div class="mt-4 w-full bg-gray-200 h-80 rounded-lg overflow-hidden">
+    <img src="img/constVar.png" class="w-full h-full object-contain">
+  </div>
+</div>
+
+
+  <!-- 5. Tipos de dados -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+  <h2 class="text-2xl font-bold mb-2">5. Tipos de dados em algoritmos (Portugol)</h2>
+
+  <ul class="list-disc ml-6 mb-4">
+    <li>Booleano</li>
+    <li>Caracter</li>
+    <li>Cadeia (string)</li>
+    <li>Inteiro</li>
+    <li>Real</li>
+    <li>Vetor</li>
+  </ul>
+
+  <div class="mt-4 w-full bg-gray-200 h-80 rounded-lg overflow-hidden">
+    <img src="img/tiposdados.png" class="w-full h-full object-contain">
+  </div>
+</div>
+
+
+  <!-- 6. 3 programas com funções -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">6. Exemplos de Programas em Portugol (Funções)</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 1</span>
+      </div>
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 2</span>
+      </div>
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. 3 programas com vetores -->
+  <div class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">7. Exemplos de Programas em Portugol (Vetores)</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 1</span>
+      </div>
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 2</span>
+      </div>
+      <div class="h-56 bg-gray-100 rounded-lg border flex items-center justify-center">
+        <span class="text-gray-500">Print da tela 3</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER (MANTIDO) -->
+<footer class="bg-[#222] text-white mt-auto">
+  <div class="py-10 px-5 flex justify-center">
+    <div class="text-center max-w-md">
+      <img src="img/bellosLOGO.png" alt="Logo Bello's Softwares" class="h-12 mx-auto mb-5">
+      <p class="mb-5 leading-relaxed text-gray-300">
+        Soluções inteligentes em automação de atendimento para impulsionar suas vendas e melhorar a experiência do cliente.
+      </p>
+    </div>
+  </div>
+  <div class="bg-[#1a1a1a] text-gray-500 text-sm text-center py-4 px-6">
+    © 2025 BELLO`S SOFTWARES. Todos os direitos reservados. CNPJ:12.345.678/9101-12
+  </div>
+</footer>
+
+</body>
+</html>
